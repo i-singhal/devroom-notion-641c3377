@@ -31,3 +31,8 @@ Configure cloud storage to back up and sync notes across devices.
 - Secure the API endpoints with authentication measures (`authentication.js`).
 - Test upload and sync functionality using appropriate test tools.
 - Update this README after executing the setup to document any specific configuration or usage instructions.
+
+## How to Set Up Cloud Storage
+1. Create a Firebase project and obtain API keys.
+2. Enter your keys in the `cloudStorageConfig.js` file.
+3. Use the function `initializeFirebase()` in your applications where needed.

@@ -9,7 +9,15 @@ const firebaseConfig = {
   appId: 'YOUR_APP_ID'
 };
 
+// Function to initialize Firebase application
+function initializeFirebase() {
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+}
+
 module.exports = {
   cloudProvider,
-  firebaseConfig
+  firebaseConfig,
+  initializeFirebase
 };

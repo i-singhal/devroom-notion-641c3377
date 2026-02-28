@@ -1,9 +1,9 @@
 // config/authentication.js
-const { firebaseConfig } = require('../cloudStorageConfig');
+const { initializeFirebase } = require('../cloudStorageConfig');
 const firebase = require('firebase/app');
 require('firebase/auth');
 
-firebase.initializeApp(firebaseConfig);
+initializeFirebase();
 
 function signInWithEmail(email, password) {
   return firebase.auth().signInWithEmailAndPassword(email, password)

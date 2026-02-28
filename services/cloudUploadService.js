@@ -1,9 +1,9 @@
 // services/cloudUploadService.js
-const { firebaseConfig } = require('../cloudStorageConfig');
+const { initializeFirebase } = require('../cloudStorageConfig');
 const firebase = require('firebase/app');
 require('firebase/storage');
 
-firebase.initializeApp(firebaseConfig);
+initializeFirebase();
 
 const storage = firebase.storage();
 
