@@ -25,9 +25,9 @@ Configure cloud storage to back up and sync notes across devices.
 6. Test syncing across multiple devices to ensure seamless operation.
 
 ### Instructions
-- First, configure your cloud storage service (AWS, GCP, or Firebase) and note the access credentials.
-- Implement a backend service that connects to this storage—preferably in `backend/cloud_storage_service.py`.
-- Develop a syncing mechanism that continuously monitors and uploads new or changed notes—ideally in `backend/sync_mechanism.py`.
-- Secure the API endpoints with authentication measures.
-- Test upload and sync functionality using scripts in `tests/test_cloud_storage.py` and `tests/test_sync_mechanism.py`.
+- First, configure your cloud storage service (Firebase) and note the access credentials.
+- Implement a backend service (`cloudUploadService.js`) that connects to this storage.
+- Develop a syncing mechanism (`syncService.js`) that continuously monitors and uploads new or changed notes.
+- Secure the API endpoints with authentication measures (`authentication.js`).
+- Test upload and sync functionality using appropriate test tools.
 - Update this README after executing the setup to document any specific configuration or usage instructions.
